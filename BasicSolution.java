@@ -38,10 +38,18 @@ public class BasicSolution {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number for which you want to find factorial : ");
         int num = sc.nextInt();
+
+        //Calling Normal Function for Factorial
         int ansNor = factorialNor(num);
+
+        //Printing Factorial using Normal Approach
         System.out.print("Factorial of "+num+" is "+ansNor);
         System.out.println();
+
+        //Calling Recursive Function for Factorial
         int ansRec = factorialRec(num);
+
+        //Printing Factorial using Recursive Approach
         System.out.print("Factorial of "+num+" is "+ansRec);
     }
 }
