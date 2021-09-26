@@ -17,6 +17,8 @@ public class BitManipulation {
 
      */
 
+    // Method For Decimal to Binary Conversion
+
     static void binaryConversion(int num){
         int count = 0;
         int temp[] = new int[32];
