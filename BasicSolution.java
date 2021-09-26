@@ -33,6 +33,23 @@ public class BasicSolution {
         return num*factorialRec(num-1);
     }
 
+    /* Check Year is leap year or not
+
+    logic : if number is completely divided by 4 and not divided by 100 or completely divided by 400
+
+     */
+
+    static boolean leapYear(int year){
+
+        boolean flag = false;
+        if((year % 4 == 0 && year % 100 != 0) || year % 400 ==0){
+            flag = true;
+        }
+        return flag;
+    }
+
+
+    //Main Function
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -51,5 +68,11 @@ public class BasicSolution {
 
         //Printing Factorial using Recursive Approach
         System.out.print("Factorial of "+num+" is "+ansRec);
+
+        //Calling Leap Year Function
+
+        int year = sc.nextInt();
+        boolean flag = leapYear(year);
+        System.out.println("Given Year is Leap year or not : "+flag);
     }
 }
